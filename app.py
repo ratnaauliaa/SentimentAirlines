@@ -61,13 +61,13 @@ if st.sidebar.checkbox("Display Word Cloud"):
     select = st.selectbox('Kategori', ['Positif', 'Netral', 'Negatif'], key='sentiment_select')
 
     if select == "Positif":
-        image = Image.open('positif.png')
+        image = Image.open('Positif.png')
         st.image(image)
     elif select == "Negatif":
-        image = Image.open('negatif.png')
+        image = Image.open('Negatif.png')
         st.image(image)
     else:
-        image = Image.open('netral.png')
+        image = Image.open('Netral.png')
         st.image(image)
 
 # Selectbox + visualization
