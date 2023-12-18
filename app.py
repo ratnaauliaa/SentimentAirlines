@@ -18,11 +18,11 @@ st.sidebar.title('Sentiment analysis of airlines')
 st.sidebar.markdown("🛫 We can analyze passengers' reviews from this application. 🛫")
 
 # Image and caption
-image = Image.open('C:/Streamlit/pesawat/gambar.jpeg')
+image = Image.open('gambar.jpeg')
 st.image(image)
 
 # Loading the data
-data = pd.read_csv('C:/Streamlit/pesawat/dataset/datafinal.csv')
+data = pd.read_csv('dataset/datafinal.csv')
 label_score = data['label_score']
 
 # Checkbox to show data
@@ -61,13 +61,13 @@ if st.sidebar.checkbox("Display Word Cloud"):
     select = st.selectbox('Kategori', ['Positif', 'Netral', 'Negatif'], key='sentiment_select')
 
     if select == "Positif":
-        image = Image.open('C:/Streamlit/pesawat/positif.png')
+        image = Image.open('positif.png')
         st.image(image)
     elif select == "Negatif":
-        image = Image.open('C:/Streamlit/pesawat/negatif.png')
+        image = Image.open('negatif.png')
         st.image(image)
     else:
-        image = Image.open('C:/Streamlit/pesawat/netral.png')
+        image = Image.open('netral.png')
         st.image(image)
 
 # Selectbox + visualization
