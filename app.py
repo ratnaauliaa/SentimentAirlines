@@ -5,6 +5,10 @@ from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
 import plotly.express as px
 
+# Set matplotlib backend
+import matplotlib
+matplotlib.use('Agg')  # Use Agg backend
+
 # Title and introduction
 st.title('Tweet Sentiment Analysis')
 st.markdown('This application is all about tweet sentiment analysis of airlines. We can analyze reviews of the passengers using this Streamlit app.')
