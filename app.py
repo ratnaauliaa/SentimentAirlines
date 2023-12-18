@@ -89,3 +89,11 @@ if len(choice) > 0:
     air_data = data[data.airline.isin(choice)]
     fig1 = px.histogram(air_data, x='airline', color='label', labels={'label': 'tweets'}, height=600, width=800)
     st.plotly_chart(fig1)
+
+# Copyright notice
+st.markdown(
+    """
+    ---
+    © 2023 Ratna Aulia. 21537141001.
+    """
+)
